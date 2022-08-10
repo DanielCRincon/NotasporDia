@@ -1,0 +1,23 @@
+<%- include("partials/header") -%>
+<!-- trae el segmento de codigo que quedo en headers dentro de la carpeta-->
+<h1>Compose</h1>
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+    <label>Title</label>
+    <input class="form-control" type="text" name="postTitle">
+  </div>
+  <div class="form-group">
+    <label>Post</label>
+    <textarea class="form-control" name= "postBody" rows="5"></textarea>
+    <!-- este multilinea hace una caja mas grande segun las filas que se coloque en rows -->
+    <!-- el nomrbre de la class implica algun atributo si cambio el nombre ya no queda bonito -->
+
+  </div>
+<button class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+
+
+
+<%- include("partials/footer") -%>
+
+<!-- trae el segmento de codigo que quedo en footer dentro de la carpeta -->

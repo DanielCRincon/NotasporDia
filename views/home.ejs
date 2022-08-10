@@ -1,0 +1,25 @@
+<%- include("partials/header") -%>
+<!-- trae el segmento de codigo que quedo en headers dentro de la carpeta-->
+
+<h1>Home</h1>
+<p><%= startingContent %></p>
+
+
+
+<div class="box">
+
+<%posts.forEach(function(post) {%>
+  <h1><%= post.title%></h1>
+  <p><%= post.content%></p>
+
+<%});%>
+
+</div>
+
+<!--foreach es un for automatico dependiendo el largo del array
+tener en cuenta la construccion llama el array posts pero para moverse
+por cada elemento solo se coloca en singular el nombre del array-->
+
+<%- include("partials/footer") -%>
+
+  <!-- trae el segmento de codigo que quedo en footer dentro de la carpeta -->
